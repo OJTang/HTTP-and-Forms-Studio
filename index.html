@@ -14,20 +14,18 @@
 				"ask": 'https://www.ask.com/'
 			};
 			form.setAttribute("action", actions[selected] + "search?q=" + input);
-			console.log(actions[selected]);
-			console.log(form.getAttribute("action"));
+
 		}
     window.addEventListener("load", function(){
-		let form = document.querySelector("form");
-		let radios = document.querySelectorAll('input[type=radio][name="engine"]');
-		form.addEventListener("sumbit", setSearchEngine());
+		let button = document.querySelector("button");;
+		button.addEventListener("click", setSearchEngine(event));
     });
 	</script>
 </head>
 
 <body>
 
-	<form id="searchForm" action="">
+	<form id="searchForm" action="https://google.com">
     	<input type="text" name="q"/>
 		<label for="google">Google</label>
 			<input type="radio" name="engine" id="google" value="google"/>
