@@ -1,0 +1,22 @@
+body {
+    position: relative;
+    text-align: center;
+    height: 257px;
+    border: 3px solid red;
+    background-color: darkslateblue;
+    padding: 150px 0;
+}
+
+input {
+    position: relative;
+    color: lime;
+    background-color: black;
+}
+
+.radio {
+    background-color: gold;
+}
+
+h1 {
+    text-align: center;
+}
