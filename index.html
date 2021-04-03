@@ -21,10 +21,10 @@
 			let input = document.querySelector("input[name=q]");
 			let radio = document.querySelector("input[type=radio]");
 			let actions = {
-				"google": 'https://www.google.com/search?q=',
-				"duckDuckGo": 'https://duckduckgo.com/?q=',
-				"bing": 'https://www.bing.com/search?q=',
-				"ask": 'https://www.ask.com/web?o=0&l=dir&qo=homepageSearchBox&q='
+				google: 'https://www.google.com/search?q=',
+				duckDuckGo: 'https://duckduckgo.com/?q=',
+				bing: 'https://www.bing.com/search?q=',
+				ask: 'https://www.ask.com/web?o=0&l=dir&qo=homepageSearchBox&q='
 			};
 			form.setAttribute("action", actions[selected] + input);
 		}
